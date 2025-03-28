@@ -1,0 +1,22 @@
+﻿<Window x:Class="CommunityBookLovers.LWindow.CustomWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CommunityBookLovers.LWindow"
+        mc:Ignorable="d"
+        Title="Подумайте" Height="200" Width="400">
+    <Grid>
+        <DockPanel Margin="10">
+            <Image DockPanel.Dock="Left" Width="100" Height="100" Stretch="Uniform"
+                   Source="pack://application:,,,/photo/catan.gif"/>
+            <StackPanel Margin="10">
+                <TextBlock Text="Вы уверены, что хотите выйти из аккаунта?" FontSize="16" TextWrapping="Wrap" Margin="0,0,0,10"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Content="Да" Width="80" Margin="5" Click="YesButton_Click"/>
+                    <Button Content="Нет" Width="80" Margin="5" Click="NoButton_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</Window>

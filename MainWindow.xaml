@@ -1,0 +1,91 @@
+﻿<Window x:Class="CommunityBookLovers.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wpfAnimatedGif="http://wpfanimatedgif.codeplex.com"
+        mc:Ignorable="d"
+        Title="Вход в систему" 
+        Height="600" Width="1000"
+        WindowStartupLocation="CenterScreen"
+        FontFamily="Segoe UI">
+
+    <Grid>
+        <!-- Градиентный фон -->
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#FFF5F5F5" Offset="0"/>
+                <GradientStop Color="#FFD8A7A7" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <!-- Основной контент -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="400"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Центральная панель с формой -->
+            <Border CornerRadius="10" Background="White" 
+                    BorderBrush="#FF8B5F65" BorderThickness="1"
+                    VerticalAlignment="Center" Margin="220,0,209,0" Padding="30" Grid.ColumnSpan="3">
+                <StackPanel>
+                    <!-- Заголовок с иконкой -->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,20">
+                        <Image Source="pack://application:,,,/photo/book_icon.jpg" 
+                               Width="104" Height="105" Margin="0,0,10,0"/>
+                        <StackPanel>
+                            <TextBlock Text="Добро пожаловать" 
+                                       FontSize="24" FontWeight="Bold" 
+                                       Foreground="#FF8B5F65"/>
+                            <TextBlock Text="Войдите в свой аккаунт" 
+                                       FontSize="16" Foreground="#666"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <!-- Поля ввода -->
+                    <StackPanel Margin="0,15">
+                        <Label Content="Email*" Foreground="#FF8B5F65" FontWeight="SemiBold"/>
+                        <TextBox x:Name="txtEmail" Height="40" Padding="10"
+                                 BorderBrush="#FF8B5F65" BorderThickness="1"
+                                 FontSize="14"/>
+                    </StackPanel>
+
+                    <StackPanel Margin="0,15">
+                        <Label Content="Пароль*" Foreground="#FF8B5F65" FontWeight="SemiBold"/>
+                        <PasswordBox x:Name="psw" Height="40" Padding="10"
+                                     BorderBrush="#FF8B5F65" BorderThickness="1"
+                                     FontSize="14"/>
+                    </StackPanel>
+
+                    <!-- Кнопка входа -->
+                    <Button x:Name="btnEnter" Content="Войти" 
+                            Click="btnEnter_Click"
+                            Background="#FF8B5F65" Foreground="White"
+                            FontWeight="Bold" FontSize="16"
+                            Height="45" Margin="0,25" Padding="10,5"
+                            BorderThickness="0" Cursor="Hand">
+                        <Button.Effect>
+                            <DropShadowEffect BlurRadius="10" ShadowDepth="3" Color="#40000000"/>
+                        </Button.Effect>
+                    </Button>
+
+                    <!-- Ссылка на регистрацию -->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15">
+                        <TextBlock Text="Нет аккаунта? " Foreground="#666"/>
+                        <Button x:Name="btnRegistration" Content="Зарегистрироваться" 
+                                Click="btnRegistration_Click"
+                                />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- Гифка в правом нижнем углу -->
+            <Image Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                   wpfAnimatedGif:ImageBehavior.AnimatedSource="pack://application:,,,/photo/hapc..gif"
+                   Width="143" Height="160" Margin="0,0,20,10" Stretch="Uniform" RenderTransformOrigin="0.561,0.889"/>
+        </Grid>
+    </Grid>
+</Window>

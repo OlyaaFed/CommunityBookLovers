@@ -1,0 +1,152 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="photobook\100years.jpg" />
+    <None Remove="photobook\1984.jpg" />
+    <None Remove="photobook\451градус.jpg" />
+    <None Remove="photobook\harrypotter.jpg" />
+    <None Remove="photobook\photo_5361748035031393476_x.jpg" />
+    <None Remove="photobook\slamdunk.jpg" />
+    <None Remove="photobook\атакатитанов.jpeg" />
+    <None Remove="photobook\блич.jpg" />
+    <None Remove="photobook\гордостьипредуб.jpg" />
+    <None Remove="photobook\дары смерти.jpg" />
+    <None Remove="photobook\играпрестолов.jpg" />
+    <None Remove="photobook\кубок огня.jpg" />
+    <None Remove="photobook\маленький принц.jpg" />
+    <None Remove="photobook\мартиниден.jpg" />
+    <None Remove="photobook\моягеройскаяакадемия.jpg" />
+    <None Remove="photobook\наруто.jpeg" />
+    <None Remove="photobook\орден феникса.jpg" />
+    <None Remove="photobook\принц полукровка.jpg" />
+    <None Remove="photobook\сказкибарда биля.jpg" />
+    <None Remove="photobook\старикиморе.jpg" />
+    <None Remove="photobook\тайная комната.jpg" />
+    <None Remove="photobook\тетрадь.jpg" />
+    <None Remove="photobook\токийскийгуль.jpg" />
+    <None Remove="photo\1V7a.gif" />
+    <None Remove="photo\45.gif" />
+    <None Remove="photo\8.jpg" />
+    <None Remove="photo\angry.gif" />
+    <None Remove="photo\angry1.gif" />
+    <None Remove="photo\book_icon.jpg" />
+    <None Remove="photo\cat.gif" />
+    <None Remove="photo\cat.png" />
+    <None Remove="photo\cat2.gif" />
+    <None Remove="photo\catan.gif" />
+    <None Remove="photo\cathap.gif" />
+    <None Remove="photo\catsadgif.gif" />
+    <None Remove="photo\defaultbook.png" />
+    <None Remove="photo\hapc..gif" />
+    <None Remove="photo\image_860208222301008179883.gif" />
+    <None Remove="photo\image_861210180226469362468.gif" />
+    <None Remove="photo\image_862304180004308306271.gif" />
+    <None Remove="photo\kotenok.gif" />
+    <None Remove="photo\reading %281%29.gif" />
+    <None Remove="photo\reading.gif" />
+    <None Remove="photo\rizli.jpg" />
+    <None Remove="photo\smile.gif" />
+    <None Remove="photo\sun.jpg" />
+    <None Remove="photo\tartagliya.png" />
+    <None Remove="photo\баврина.jpg" />
+    <None Remove="photo\ВиМ.png" />
+    <None Remove="photo\Война и мир.jpg" />
+    <None Remove="photo\Онегин.jpg" />
+    <None Remove="photo\ПиД.jpg" />
+    <None Remove="photo\рацио-1.png" />
+    <None Remove="photo\Тзс.jpg" />
+    <None Remove="photo\щедрина.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="photo\book_icon.jpg" />
+    <Resource Include="photo\defaultbook.png" />
+    <Resource Include="photo\rizli.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="itext7" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2957.106" />
+    <PackageReference Include="PdfiumViewer" Version="2.13.0" />
+    <PackageReference Include="PdfiumViewer.WPF" Version="1.0.6" />
+    <PackageReference Include="PdfSharp" Version="6.1.1" />
+    <PackageReference Include="PdfSharpCore" Version="1.3.65" />
+    <PackageReference Include="System.Drawing.Common" Version="9.0.1" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="book\book_icon.ico" />
+    <Resource Include="photobook\100years.jpg" />
+    <Resource Include="photobook\1984.jpg" />
+    <Resource Include="photobook\451градус.jpg" />
+    <Resource Include="photobook\harrypotter.jpg" />
+    <Resource Include="photobook\photo_5361748035031393476_x.jpg" />
+    <Resource Include="photobook\slamdunk.jpg" />
+    <Resource Include="photobook\атакатитанов.jpeg" />
+    <Resource Include="photobook\блич.jpg" />
+    <Resource Include="photobook\гордостьипредуб.jpg" />
+    <Resource Include="photobook\дары смерти.jpg" />
+    <Resource Include="photobook\играпрестолов.jpg" />
+    <Resource Include="photobook\кубок огня.jpg" />
+    <Resource Include="photobook\маленький принц.jpg" />
+    <Resource Include="photobook\мартиниден.jpg" />
+    <Resource Include="photobook\моягеройскаяакадемия.jpg" />
+    <Resource Include="photobook\наруто.jpeg" />
+    <Resource Include="photobook\орден феникса.jpg" />
+    <Resource Include="photobook\принц полукровка.jpg" />
+    <Resource Include="photobook\сказкибарда биля.jpg" />
+    <Resource Include="photobook\старикиморе.jpg" />
+    <Resource Include="photobook\тайная комната.jpg" />
+    <Resource Include="photobook\тетрадь.jpg" />
+    <Resource Include="photobook\токийскийгуль.jpg" />
+    <Resource Include="photo\1V7a.gif" />
+    <Resource Include="photo\45.gif" />
+    <Resource Include="photo\8.jpg" />
+    <Resource Include="photo\angry.gif" />
+    <Resource Include="photo\angry1.gif" />
+    <Resource Include="photo\cat.gif" />
+    <Resource Include="photo\cat.png" />
+    <Resource Include="photo\cat2.gif" />
+    <Resource Include="photo\catan.gif" />
+    <Resource Include="photo\cathap.gif" />
+    <Resource Include="photo\catsadgif.gif" />
+    <Resource Include="photo\hapc..gif" />
+    <Resource Include="photo\image_860208222301008179883.gif" />
+    <Resource Include="photo\image_861210180226469362468.gif" />
+    <Resource Include="photo\image_862304180004308306271.gif" />
+    <Resource Include="photo\kotenok.gif" />
+    <Resource Include="photo\reading (1).gif" />
+    <Resource Include="photo\reading.gif" />
+    <Resource Include="photo\smile.gif" />
+    <Resource Include="photo\sun.jpg" />
+    <Resource Include="photo\tartagliya.png" />
+    <Resource Include="photo\баврина.jpg" />
+    <Resource Include="photo\ВиМ.png" />
+    <Resource Include="photo\Война и мир.jpg" />
+    <Resource Include="photo\Онегин.jpg" />
+    <Resource Include="photo\ПиД.jpg" />
+    <Resource Include="photo\рацио-1.png" />
+    <Resource Include="photo\Тзс.jpg" />
+    <Resource Include="photo\щедрина.jpg" />
+  </ItemGroup>
+
+</Project>
